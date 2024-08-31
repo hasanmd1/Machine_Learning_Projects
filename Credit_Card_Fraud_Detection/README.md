@@ -102,9 +102,11 @@ time required to develop effective fraud detection models.
     ```
 2. **Create and activate a virtual environment:**
     ```bash
-    python -m venv env
-    source env/bin/activate       (for macOS)
-    ./env/bin/activate             (for windows)
+    python -m venv venv
+   ```
+   ```bash
+    source venv/bin/activate       (for macOS)
+    venv/Scripts/activate          (for windows)
     ```
 3. **Install the required dependencies:**
     ```bash
