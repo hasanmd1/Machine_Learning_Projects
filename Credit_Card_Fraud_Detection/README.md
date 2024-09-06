@@ -139,7 +139,7 @@ to the data source documentation for obtaining the dataset.
 ## Contributing
 
 Contributions are not allowed for this project! Please open
-an issue or submit a pull request for any improvements or
+an issue for any improvements or
 new features.
 
 
@@ -154,4 +154,4 @@ LICENSE file for more details.
 Kaggle for providing access to datasets that informed the
 development of this system.
 
-Datasurce: [https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets/input]
+Datasource: [Credit Card Fraud Detection](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets/input)
