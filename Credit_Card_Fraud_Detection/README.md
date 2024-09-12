@@ -20,68 +20,76 @@ fraud on customer lifetime value.
 ### 1. Anomaly Detection
 The system utilizes advanced anomaly detection algorithms
 to identify unusual patterns in transaction data, flagging
-them as potential fraud cases. This feature is the backbone
-of the fraud detection mechanism, ensuring that even subtle
-irregularities are detected.
+them as potential fraud cases.
 
 ### 2. Transaction Risk Scoring
 Each transaction is assessed and assigned a risk score based
-on its likelihood of being fraudulent. This scoring system
-allows for prioritizing high-risk transactions for further
-investigation, ensuring that resources are focused on the most
-critical cases.
+on its likelihood of being fraudulent.
 
 ### 3. Time-Series Fraud Detection
 By analyzing transaction data over time, the system can detect
-fraud that may be hidden within temporal patterns. This
-feature is particularly useful for identifying sophisticated
-fraud schemes that unfold over longer periods.
+fraud that may be hidden within temporal patterns.
 
 ### 4. Customer Segmentation for Fraud Risk
 The system segments customers based on their transaction
-behaviors and associated fraud risks. This segmentation
-helps in tailoring fraud prevention strategies to different
-customer groups, improving the overall effectiveness of the
-system.
+behaviors and associated fraud risks.
 
 ### 5. Feature Importance and Explainability
 Utilizing machine learning models, the system provides insights
 into which features (e.g., transaction amount, time, location)
-are most indicative of fraud. This explainability is crucial
-for understanding the decision-making process of the model and
-for ensuring transparency.
+are most indicative of fraud.
 
 ### 6. Real-Time Fraud Detection System
 The system is designed to operate in real-time, allowing for
-immediate detection and response to fraudulent activities. This
-real-time capability is critical for preventing fraud before it
-results in significant financial loss.
+immediate detection and response to fraudulent activities.
 
 ### 7. Multi-Label Classification
-In cases where transactions may exhibit multiple types of
-fraudulent behavior, the system employs multi-label
+In cases where transactions may display multiple types of
+fraudulent behavior, the system uses multi-label
 classification techniques to assign multiple fraud categories
-to a single transaction. This enables a more nuanced
-understanding of fraud cases.
+to a single transaction.
 
 ### 8. Customer Behavior Profiling
 The system builds profiles of customer behavior based on
-historical transaction data. These profiles are used to detect
-deviations from normal behavior, which may indicate fraudulent
-activity.
+historical transaction data.
 
 ### 9. Predicting Customer Lifetime Value (CLTV) and Fraud Impact
 The project includes a model for predicting Customer Lifetime
 Value (CLTV) while assessing the potential impact of fraud on a
-customer's value to the business. This helps in prioritizing
-fraud prevention efforts based on the economic significance of
-customers.
+customer's value to the business.
 
 ### 10. Transfer Learning for Fraud Detection
 To enhance fraud detection performance, the system incorporates
 transfer learning techniques, leveraging pre-trained models from
-related tasks. This approach improves accuracy and reduces the
-time required to develop effective fraud detection models.
+related tasks.
+
+## How features used in this project
+
+### **To Summarize the Notebook Structure**:
+
+1. **EDA Section**:
+   - Time-Series Fraud Detection (Feature 3)
+   - Customer Segmentation for Fraud Risk (Feature 4)
+   
+2. **Feature Engineering Section**:
+   - Scaling & Transformation
+   - PCA for Dimensionality Reduction
+   - Transaction Risk Scoring (Feature 2)
+   - Customer Behavior Profiling (Feature 8)
+   - Feature Importance and Explainability (Feature 5)
+
+3. **Model Building Section**:
+   - Train-Test Split
+   - Anomaly Detection (Feature 1)
+   - Model Training (RandomForest, etc.)
+   - Multi-Label Classification (Feature 7)
+   - Predicting CLTV and Fraud Impact (Feature 9)
+   - Transfer Learning for Fraud Detection (Feature 10)
+
+4. **Model Evaluation Section**:
+   - Confusion Matrix & Evaluation Metrics
+   - Feature Importance and Explainability (Feature 5)
+   - Real-Time Fraud Detection System (Feature 6)
 
 
 
@@ -139,8 +147,7 @@ to the data source documentation for obtaining the dataset.
 ## Contributing
 
 Contributions are not allowed for this project! Please open
-an issue or submit a pull request for any improvements or
-new features.
+an issue for any improvements or new features.
 
 
 ## License
@@ -154,4 +161,4 @@ LICENSE file for more details.
 Kaggle for providing access to datasets that informed the
 development of this system.
 
-Datasurce: [https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets/input]
+Datasource: [Credit Card Fraud Detection](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets/input)
