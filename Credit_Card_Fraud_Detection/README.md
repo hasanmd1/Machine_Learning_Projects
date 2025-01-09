@@ -49,10 +49,6 @@ fraudulent behavior, the system uses multi-label
 classification techniques to assign multiple fraud categories
 to a single transaction.
 
-### 8. Customer Behavior Profiling
-The system builds profiles of customer behavior based on
-historical transaction data.
-
 ### 9. Predicting Customer Lifetime Value (CLTV) and Fraud Impact
 The project includes a model for predicting Customer Lifetime
 Value (CLTV) while assessing the potential impact of fraud on a
@@ -74,9 +70,8 @@ related tasks.
 2. **Feature Engineering Section**:
    - Scaling & Transformation
    - PCA for Dimensionality Reduction
-   - Transaction Risk Scoring (Feature 2)
-   - Customer Behavior Profiling (Feature 8)
    - Feature Importance and Explainability (Feature 5)
+   - Transaction Risk Scoring (Feature 2)
 
 3. **Model Building Section**:
    - Train-Test Split
@@ -88,7 +83,6 @@ related tasks.
 
 4. **Model Evaluation Section**:
    - Confusion Matrix & Evaluation Metrics
-   - Feature Importance and Explainability (Feature 5)
    - Real-Time Fraud Detection System (Feature 6)
 
 
