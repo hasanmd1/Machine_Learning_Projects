@@ -2,15 +2,23 @@
 
 This repository contains a collection of machine learning projects that demonstrate various techniques and methodologies across different domains. Each project is contained within its own directory, along with the necessary code, datasets, and documentation.
 
-## Table of Contents
+## Table of Contents  
 
-1. [Project 1: Credit Card Fraud Detection](#credit-card-fraud-detection)
-2. [Project 2: Customer Segmentation Analysis](#customer-segmentation-analysis)
-3. [Project 3: Time-Series Analysis and Forecasting](#time-series-analysis-and-forecasting)
-4. [Project 4: Sentiment Analysis on Social Media](#sentiment-analysis-on-social-media)
-5. [Project 5: Image Classification with CNNs](#image-classification-with-cnns)
-6. [Project 6: Natural Language Processing for Text Classification](#natural-language-processing-for-text-classification)
-7. [Project 7: Recommender System](#recommender-system)
+- [Machine Learning Projects](#machine-learning-projects)
+  - [Table of Contents](#table-of-contents)
+  - [Project Descriptions](#project-descriptions)
+    - [Credit Card Fraud Detection](#credit-card-fraud-detection)
+    - [Time-Series Analysis and Forecasting](#time-series-analysis-and-forecasting)
+    - [Movies Recommender System](#movies-recommender-system)
+    - [Natural Language Processing for Text Classification](#natural-language-processing-for-text-classification)
+    - [Chat-Bot Modeling and Training](#chat-bot-modeling-and-training)
+    - [Image Classification with CNNs](#image-classification-with-cnns)
+  - [How to Use](#how-to-use)
+    - [Run Projects Individually](#run-projects-individually)
+    - [Run the Flask Application](#run-the-flask-application)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Project Descriptions
 
@@ -18,123 +26,117 @@ This repository contains a collection of machine learning projects that demonstr
 
 - **Objective**: Develop models to detect fraudulent credit card transactions.
 - **Key Features**:
-  - Anomaly Detection + Fraud Detection
-  - Transaction Risk Scoring
-  - Feature Importance and Explainability
-  - Real-Time Fraud Detection System
+  - Anomaly detection and fraud prediction
+  - Transaction risk scoring
+  - Explainability using SHAP/LIME
+  - Real-time fraud detection pipeline
 
-- **Tech Stack**: Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
+- **Tech Stack**: Python, Scikit-learn, XGBoost, Pandas, NumPy, Matplotlib, Seaborn, SHAP
 - **Dataset**: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
-### Customer Segmentation Analysis
-
-- **Objective**: Segment customers based on purchasing behavior.
-- **Key Features**:
-  - Customer Segmentation for Fraud Risk
-  - Customer Behavior Profiling
-  - Predicting Customer Lifetime Value (CLTV)
-
-- **Tech Stack**: Python, Scikit-learn, Pandas, Matplotlib, Seaborn
-- **Dataset**: [Mall Customer Segmentation Dataset](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
+---
 
 ### Time-Series Analysis and Forecasting
 
 - **Objective**: Analyze and forecast time-series data for sales prediction.
 - **Key Features**:
-  - Time-Series Fraud Detection
-  - Trend Analysis and Seasonality
-  - Forecasting with ARIMA/SARIMA models
+  - Trend analysis, seasonality decomposition
+  - Forecasting using ARIMA, SARIMA, and Prophet
+  - Evaluation with MAPE, RMSE, and other metrics
 
-- **Tech Stack**: Python, Pandas, Matplotlib, Statsmodels
+- **Tech Stack**: Python, Pandas, Statsmodels, Facebook Prophet, Matplotlib, Seaborn
 - **Dataset**: [Retail Sales Forecasting Dataset](https://www.kaggle.com/c/demand-forecasting-kernels-only)
 
-### Sentiment Analysis on Social Media
+---
 
-- **Objective**: Perform sentiment analysis on social media text data.
-- **Key Features**:
-  - Natural Language Processing for Sentiment Classification
-  - Text Preprocessing and Tokenization
-  - Model Interpretability and Explainability
-
-- **Tech Stack**: Python, NLTK, Scikit-learn, Pandas, Matplotlib
-- **Dataset**: [Twitter Sentiment Analysis Dataset](https://www.kaggle.com/kazanova/sentiment140)
-
-### Image Classification with CNNs
-
-- **Objective**: Build a Convolutional Neural Network (CNN) for image classification.
-- **Key Features**:
-  - Deep Learning with CNNs
-  - Data Augmentation and Transfer Learning
-  - Model Optimization and Tuning
-
-- **Tech Stack**: Python, TensorFlow/Keras, NumPy, Matplotlib
-- **Dataset**: [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
-
-### Natural Language Processing for Text Classification
-
-- **Objective**: Classify text documents into predefined categories using NLP techniques.
-- **Key Features**:
-  - Text Classification with NLP
-  - Feature Extraction using TF-IDF
-  - Model Evaluation and Comparison
-
-- **Tech Stack**: Python, NLTK, Scikit-learn, Pandas
-- **Dataset**: [20 Newsgroups Dataset](http://qwone.com/~jason/20Newsgroups/)
-
-### Recommender System
+### Movies Recommender System
 
 - **Objective**: Build a recommendation system to suggest products or content to users.
 - **Key Features**:
-  - Collaborative Filtering and Content-Based Filtering
-  - Hybrid Recommender System
-  - Evaluation Metrics for Recommender Systems
+  - Collaborative filtering with matrix factorization (SVD)
+  - Content-based filtering using item features
+  - Hybrid models and evaluation using precision/recall
 
-- **Tech Stack**: Python, Scikit-learn, Pandas, NumPy, Matplotlib
+- **Tech Stack**: Python, Scikit-learn, Surprise, Pandas, NumPy, Matplotlib
 - **Dataset**: [MovieLens Dataset](https://grouplens.org/datasets/movielens/)
 
+---
 
-## How to Use
+### Natural Language Processing for Text Classification
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/hasanmd1/Machine_Learning_Projects.git
-   ```
+- **Objective**: Classify text documents into predefined categories using advanced NLP techniques.
+- **Key Features**:
+  - Preprocessing with tokenization, stemming, and lemmatization
+  - Vectorization using TF-IDF and word embeddings
+  - Model evaluation and hyperparameter tuning
 
-2. **Navigate to a Specific Project**:
-   ```bash
-   cd Project_Name
-   ```
+- **Tech Stack**: Python, Scikit-learn, NLTK, SpaCy, Gensim
+- **Dataset**: [20 Newsgroups Dataset](http://qwone.com/~jason/20Newsgroups/)
 
-3. **Set Up the Environment**:
-   - Create a virtual environment:
-     ```bash
-     python -m venv venv
-     ```
-   - Activate the environment:
-     - On Windows:
-       ```bash
-       venv\Scripts\activate
-       ```
-     - On macOS/Linux:
-       ```bash
-       source venv/bin/activate
-       ```
-   - Install dependencies:
-     ```bash
-     pip install -r requirements.txt
-     ```
+---
 
-4. **Run the Project**:
-   - Follow the instructions in the project’s individual `README.md` file to run the code and explore the results.
+### Chat-Bot Modeling and Training
 
-## Contributing
+- **Objective**: Build a dynamic, conversational chatbot using modern NLP techniques.
+- **Key Features**:
+  - Intent classification and entity recognition
+  - Pretrained transformer models (e.g., BERT, GPT)
+  - Integration with REST APIs or Flask for deployment
+
+- **Tech Stack**: Python, Hugging Face Transformers, NLTK, SpaCy, Flask
+- **Dataset**: [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
+
+---
+
+### Image Classification with CNNs
+
+- **Objective**: Build and optimize a convolutional neural network (CNN) for image classification.
+- **Key Features**:
+  - Transfer learning with models like ResNet and VGG
+  - Data augmentation and regularization techniques
+  - Deployment with TensorFlow Lite or Flask
+
+- **Tech Stack**: Python, TensorFlow/Keras, OpenCV, NumPy, Matplotlib
+- **Dataset**: [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+Here’s an updated version of the `README.md`, mentioning that the Flask application serves as an alternative way to explore all the projects:
+
+## How to Use  
+
+### Run Projects Individually  
+
+Each project has its own directory with dedicated code and instructions. To run a project individually:  
+
+1. Navigate to the project directory.  
+2. Follow the instructions in the `README.md` file within the project directory.  
+3. Run the corresponding Python scripts or Jupyter notebooks.  
+
+### Run the Flask Application  
+
+Alternatively, you can explore all projects using a unified Flask web application. The application allows you to:  
+
+- Upload datasets.  
+- Train and evaluate models interactively.  
+- Chat with a bot for project guidance or general machine learning queries.  
+
+To run the Flask application:  
+
+1. Navigate to the `flask-app` directory.  
+2. Follow the setup instructions in the `flask-app/README.md`.  
+3. Start the application and open it in your browser.
+
+## Contributing  
 
 Contributions are closed!
 
-## License
+## License  
 
-This repository is licensed under the MIT License. See the `LICENSE` file for more details.
+This repository is licensed under the MIT License. See the `LICENSE.md` file for more details.
 
-## Contact
+## Contact  
 
-For any questions or feedback, feel free to contact [Zahid Hasan](mailto:mdzhasancz@gmail.com).
+For queries or support:  
+
+- **Name**: Zahid Hasan  
+- **Email**: [Zahid Hasan](mailto:mdzhasancz@gmail.com)
+- **GitHub**: [hasanmd1](https://github.com/hasanmd1)  
