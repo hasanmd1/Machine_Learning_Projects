@@ -1,8 +1,6 @@
-import pandas as pd
 import os
-import sys
 
-from data_preprocessing import clean_data
+import pandas as pd
 
 
 def load_data():
