@@ -1,4 +1,4 @@
-# Machine Learning Projects
+# ML Projects (working on them. hopefully everything will be 100% working by March 2025)
 
 This repository contains a collection of machine learning projects that demonstrate various techniques and methodologies across different domains. Each project is contained within its own directory, along with the necessary code, datasets, and documentation.
 
@@ -28,7 +28,7 @@ This repository contains a collection of machine learning projects that demonstr
 - **Key Features**:
   - Anomaly detection and fraud prediction
   - Transaction risk scoring
-  - Explainability using SHAP/LIME
+  - Explainability using SHAP
   - Real-time fraud detection pipeline
 
 - **Tech Stack**: Python, Scikit-learn, XGBoost, Pandas, NumPy, Matplotlib, Seaborn, SHAP
@@ -80,8 +80,8 @@ This repository contains a collection of machine learning projects that demonstr
 - **Objective**: Build a dynamic, conversational chatbot using modern NLP techniques.
 - **Key Features**:
   - Intent classification and entity recognition
-  - Pretrained transformer models (e.g., BERT, GPT)
-  - Integration with REST APIs or Flask for deployment
+  - Pretrained transformer models (GPT)
+  - Integration with REST APIs and Flask for deployment
 
 - **Tech Stack**: Python, Hugging Face Transformers, NLTK, SpaCy, Flask
 - **Dataset**: [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
@@ -94,7 +94,7 @@ This repository contains a collection of machine learning projects that demonstr
 - **Key Features**:
   - Transfer learning with models like ResNet and VGG
   - Data augmentation and regularization techniques
-  - Deployment with TensorFlow Lite or Flask
+  - Deployment with TensorFlow Lite and Flask
 
 - **Tech Stack**: Python, TensorFlow/Keras, OpenCV, NumPy, Matplotlib
 - **Dataset**: [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)

@@ -2,18 +2,18 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
+class CleanData:
+    def __init__(self):
+        pass
 
-def load_data(location):
-    return pd.read_csv(location, sep=',')
+    def clean_data(self, dataframe, column_name):
+        if column_name is None:
+            return dataframe
+        dataframe: pd.DataFrame = dataframe[column_name].fillna(0)
+        return dataframe
 
-
-def clean_data(df):
-    df.drop_duplicates(inplace=True)
-    df.dropna(inplace=True)
-    df.reset_index(drop=True, inplace=True)
-    return df
-
-
-# if __name__ == '__main__':
-#     df = load_data('../dataset/raw/creditcard.csv')
-#     over_sampling(df)
+    def clean_data_empty_string(self, dataframe, column_name):
+        if column_name is None:
+            return dataframe
+        dataframe: pd.DataFrame = dataframe[column_name].fillna('Unknown')
+        return dataframe
