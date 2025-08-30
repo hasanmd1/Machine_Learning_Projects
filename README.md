@@ -1,4 +1,4 @@
-# ML Projects (working on them. hopefully everything will be 100% working by March 2025)
+# ML Projects (working on them. hopefully everything will be 100% working by March 2026)
 
 This repository contains a collection of machine learning projects that demonstrate various techniques and methodologies across different domains. Each project is contained within its own directory, along with the necessary code, datasets, and documentation.
 
